@@ -1,9 +1,8 @@
 package org.usfirst.frc3482.robot;
 
-import org.usfirst.frc3482.robot.subsystems.RangeFinder;
+import com.ctre.CANTalon;
 
 import edu.wpi.first.wpilibj.AnalogInput;
-import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.RobotDrive;

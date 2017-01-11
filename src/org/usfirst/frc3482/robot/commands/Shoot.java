@@ -1,10 +1,10 @@
 package org.usfirst.frc3482.robot.commands;
 
-import edu.wpi.first.wpilibj.Joystick.RumbleType;
+import org.usfirst.frc3482.robot.Robot;
+import org.usfirst.frc3482.robot.RobotMap;
+
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
-import org.usfirst.frc3482.robot.*;
 
 public class Shoot extends Command {
 	

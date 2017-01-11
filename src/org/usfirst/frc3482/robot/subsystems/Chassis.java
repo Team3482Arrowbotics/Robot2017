@@ -3,7 +3,8 @@ package org.usfirst.frc3482.robot.subsystems;
 import org.usfirst.frc3482.robot.Robot;
 import org.usfirst.frc3482.robot.RobotMap;
 
-import edu.wpi.first.wpilibj.CANTalon;
+import com.ctre.CANTalon;
+
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.PIDOutput;
 import edu.wpi.first.wpilibj.RobotDrive;

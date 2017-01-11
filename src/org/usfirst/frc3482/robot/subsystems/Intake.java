@@ -1,13 +1,16 @@
 package org.usfirst.frc3482.robot.subsystems;
 
-import org.usfirst.frc3482.robot.*;
+import org.usfirst.frc3482.robot.RobotMap;
 
-import edu.wpi.first.wpilibj.command.PIDSubsystem;
+import com.ctre.CANTalon;
+import com.ctre.CANTalon.FeedbackDevice;
+import com.ctre.CANTalon.TalonControlMode;
+
+import edu.wpi.first.wpilibj.Counter;
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj.*;
-import edu.wpi.first.wpilibj.CANTalon.FeedbackDevice;
-import edu.wpi.first.wpilibj.CANTalon.TalonControlMode;
 
 public class Intake extends Subsystem {
 

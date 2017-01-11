@@ -1,9 +1,12 @@
 package org.usfirst.frc3482.robot.subsystems;
 
-import org.usfirst.frc3482.robot.*;
+import org.usfirst.frc3482.robot.Robot;
+import org.usfirst.frc3482.robot.RobotMap;
+
+import com.ctre.CANTalon;
+
+import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.*;
-import edu.wpi.first.wpilibj.Joystick.RumbleType;
 
 public class Shooter extends Subsystem {
 
