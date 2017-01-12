@@ -36,7 +36,7 @@ public class OI {
 		//test.whenPressed(new AutonomousLowBar());
 		
 		test1 = new JoystickButton(joystick, 11);
-	    test1.whileHeld(new SpinFeedIn());
+	    test1.whileHeld(new TimedFeed(100));
 	    
 		startFeedButton = new JoystickButton(joystick, 1);
 		startFeedButton.whileHeld(new FeedShooter(true));
@@ -44,32 +44,32 @@ public class OI {
 		reverseFeedButton = new JoystickButton(joystick, 12);
 		reverseFeedButton.whileHeld(new FeedShooter(false));
 		
-		spinOuttakeButton = new JoystickButton(joystick, 5);
-		spinOuttakeButton.whileHeld(new SpinIntake(true));
+		//spinOuttakeButton = new JoystickButton(joystick, 5);
+		//spinOuttakeButton.whileHeld(new SpinIntake(true));
 		
-		spinIntakeButton = new JoystickButton(joystick, 6);
-		spinIntakeButton.whenPressed(new SpinIntake(false));
+		//spinIntakeButton = new JoystickButton(joystick, 6);
+		//spinIntakeButton.whenPressed(new SpinIntake(false));
 		
 		startShooterButton = new JoystickButton(joystick, 2);
 		startShooterButton.whileHeld(new Shoot());
 		
-		raiseIntakeButton = new JoystickButton(joystick, 10);
-		raiseIntakeButton.whileHeld(new MoveIntake(0));
+		//raiseIntakeButton = new JoystickButton(joystick, 10);
+		//raiseIntakeButton.whileHeld(new MoveIntake(0));
 		
-		downAndSpin = new JoystickButton(joystick, 7);
-		downAndSpin.whileHeld(new DownAndSpin());
+		//downAndSpin = new JoystickButton(joystick, 7);
+		//downAndSpin.whileHeld(new DownAndSpin());
 		
-		lowerIntakeButton = new JoystickButton(joystick, 9);
-		lowerIntakeButton.whileHeld(new MoveIntake(1));
+		//lowerIntakeButton = new JoystickButton(joystick, 9);
+		//lowerIntakeButton.whileHeld(new MoveIntake(1));
 		
 		getRFVoltage = new JoystickButton(joystick, 4);
 		getRFVoltage.whenPressed(new RangeRetrieve());
 		
-		portCullis = new JoystickButton(joystick, 8);
-		portCullis.whileHeld(new Portcullis()); 
+		//portCullis = new JoystickButton(joystick, 8);
+		//portCullis.whileHeld(new Portcullis()); 
 		
-		manualIntake = new JoystickButton(joystick, 3);
-		manualIntake.whileHeld(new ManualIntake());
+		//manualIntake = new JoystickButton(joystick, 3);
+		//manualIntake.whileHeld(new ManualIntake());
 		
 	}
 	public Joystick getxboxController() {
