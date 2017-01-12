@@ -23,6 +23,7 @@ public class OI {
 	public JoystickButton downAndSpin;
 	public JoystickButton test;
 	public JoystickButton manualIntake;
+	public JoystickButton test1;
 	
 	public OI() {
 		xboxController = new Joystick(2);
@@ -34,6 +35,9 @@ public class OI {
 		//test = new JoystickButton(joystick, 12);
 		//test.whenPressed(new AutonomousLowBar());
 		
+		test1 = new JoystickButton(joystick, 11);
+	    test1.whileHeld(new SpinFeedIn());
+	    
 		startFeedButton = new JoystickButton(joystick, 1);
 		startFeedButton.whileHeld(new FeedShooter(true));
 		

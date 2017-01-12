@@ -1,5 +1,7 @@
 package org.usfirst.frc3482.robot;
 
+import java.awt.Image;
+
 import org.usfirst.frc3482.robot.commands.AutonomousCharge;
 import org.usfirst.frc3482.robot.commands.AutonomousLowBar;
 import org.usfirst.frc3482.robot.commands.Drive;
@@ -8,9 +10,6 @@ import org.usfirst.frc3482.robot.subsystems.Chassis;
 import org.usfirst.frc3482.robot.subsystems.Intake;
 import org.usfirst.frc3482.robot.subsystems.RangeFinder;
 import org.usfirst.frc3482.robot.subsystems.Shooter;
-
-import com.ni.vision.NIVision;
-import com.ni.vision.NIVision.Image;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -64,12 +63,12 @@ public class Robot extends IterativeRobot {
 		autoChooser.addObject("Low Bar", new AutonomousLowBar());
 		SmartDashboard.putData("Autonomous Mode Chooser", autoChooser);
 
-		frame = NIVision.imaqCreateImage(NIVision.ImageType.IMAGE_HSL, 0);
-
-        // the camera name (ex "cam0") can be found through the roborio web interface
-        session = NIVision.IMAQdxOpenCamera("cam0",
-                NIVision.IMAQdxCameraControlMode.CameraControlModeController);
-        NIVision.IMAQdxConfigureGrab(session);
+//		frame = NIVision.imaqCreateImage(NIVision.ImageType.IMAGE_HSL, 0);
+//
+//        // the camera name (ex "cam0") can be found through the roborio web interface
+//        session = NIVision.IMAQdxOpenCamera("cam0",
+//                NIVision.IMAQdxCameraControlMode.CameraControlModeController);
+//        NIVision.IMAQdxConfigureGrab(session);
 		
 		
 		
@@ -84,7 +83,7 @@ public class Robot extends IterativeRobot {
 	}
 	
 	public void autonomousInit() {
-		NIVision.IMAQdxStartAcquisition(session);
+		//NIVision.IMAQdxStartAcquisition(session);
 		autonomousCommand = (CommandGroup) autoChooser.getSelected();
 		System.out.println("AUTO INIT");
     	
