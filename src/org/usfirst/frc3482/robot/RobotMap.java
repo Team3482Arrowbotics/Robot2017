@@ -24,6 +24,7 @@ public class RobotMap {
 	public static AnalogInput leftRF;
 //	public static AnalogInput rightRF;
 	
+	
 	public static void init() {
 		
 		timer = new Timer();
